@@ -11,5 +11,5 @@ boton.addEventListener("click", ()=> {
 })
 
 socket.on("mensaje", (data)=>{
-    output.innerHTML += `<p>${socket.id} ${data.data.message}</p>`;
+    output.innerHTML += `<p>${data.message}</p>`;
 })

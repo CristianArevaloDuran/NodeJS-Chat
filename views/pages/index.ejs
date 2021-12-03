@@ -10,6 +10,11 @@
 <body>
     <div class="chat">
         <div class="messages">
+            <% if(data.length) { %>
+                <% for(var i = 0; i < data.length; i ++) { %>
+                    <p><%= data[i].mensaje %></p>
+                <% } %>
+            <% } %>
         </div>
         <div class="message-send">
             <div class="input">
